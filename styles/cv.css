@@ -1,0 +1,213 @@
+Styles Generaux */ * {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+    margin: 5px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(68, 86, 124);
+}
+
+
+/*HEADER & FOOTER*/
+
+header,
+footer {
+    width: 100%;
+    padding: 10px 0px;
+    background: url("../asset/header.jpg") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+}
+
+header {
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+
+header h1,
+h3 {
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 2px solid #fff;
+    height: 90px;
+}
+
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #fff;
+    background-color: #fff;
+}
+
+section h2 {
+    margin: 20px 0;
+    width: 90%;
+}
+
+section>div {
+    width: 90%;
+}
+
+
+/*SECTION INFOS*/
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+
+.prez {
+    border-bottom: 2px dashed #ccc;
+}
+
+.prez a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+
+.contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    line-height: 0.5;
+}
+
+.contact-flex p:first-child {
+    flex: 0 0 40%;
+}
+
+.contact-flex p:last-child {
+    flex: 0 0 60%;
+}
+
+
+/*SECTION EXP ET FORMATION*/
+
+.exp {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.exp-info {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+}
+
+.exp-logo {
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+
+.exp-info {
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+
+.exp img {
+    width: 100%;
+}
+
+.exp h4 {
+    font-size: 1.2em;
+}
+
+.exp h5 {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify;
+}
+
+
+/*VERSION BUREAU DU CV*/
+
+@media screen and (min-width: 980px) {
+    section {
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover {
+        color: #EA0;
+    }
+    header h1 {
+        width: 80%;
+    }
+    .prez,
+    .contact {
+        flex: 0 0 45%;
+    }
+    .prez {
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact {
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a {
+        border: 2px solid transparent;
+    }
+    .prez a:hover {
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo {
+        flex: 0 0 10%;
+    }
+    .exp-info,
+    .exp-desc {
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet {
+        flex: 0 1 25%;
+    }
+}
